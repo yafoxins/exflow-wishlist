@@ -1,0 +1,95 @@
+version: "3.8"
+
+services:
+  # PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: exflow_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-exflow_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_me_local_password}
+      POSTGRES_DB: ${POSTGRES_DB:-exflow_db}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-exflow_user}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis
+  redis:
+    image: redis:7-alpine
+    container_name: exflow_redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Mailhog (dev SMTP)
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: exflow_mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"  # SMTP
+      - "8025:8025"  # Web UI
+    volumes:
+      - mailhog_data:/maildir
+
+  # Backend (FastAPI)
+  backend:
+    build: ./backend
+    container_name: exflow_backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/app
+      - backend_uploads:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"   # прямой доступ к backend (помимо nginx)
+
+  # Frontend (React)
+  frontend:
+    build: ./frontend
+    container_name: exflow_frontend
+    restart: unless-stopped
+    env_file:
+      - ./frontend/.env
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"   # доступ к фронту напрямую (для dev)
+
+  # Nginx (reverse proxy)
+  nginx:
+    build: ./nginx
+    container_name: exflow_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+      - frontend
+
+volumes:
+  postgres_data:
+  redis_data:
+  mailhog_data:
+  backend_uploads:
