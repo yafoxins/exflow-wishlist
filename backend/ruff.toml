@@ -1,0 +1,76 @@
+# Ruff configuration для Wishlist Backend
+# https://docs.astral.sh/ruff/
+
+# Базовые настройки
+line-length = 120
+target-version = "py311"
+
+# Исключённые директории
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+    "migrations",
+    "alembic",
+    ".pytest_cache",
+    ".mypy_cache",
+    "build",
+    "dist",
+]
+
+[lint]
+# Включаемые правила
+# E/W - pycodestyle (PEP 8 стиль)
+# F - Pyflakes (логические ошибки)
+# I - isort (сортировка импортов)
+# N - pep8-naming (правила именования)
+# UP - pyupgrade (современный синтаксис Python)
+# B - flake8-bugbear (потенциальные баги)
+# A - flake8-builtins (не затенять встроенные функции)
+# C4 - flake8-comprehensions (оптимизация list/dict comprehensions)
+# SIM - flake8-simplify (упрощение кода)
+# RUF - Ruff-специфичные правила
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "A",   # flake8-builtins
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "RUF", # Ruff-specific
+]
+
+# Игнорируемые правила
+ignore = [
+    "E501",   # line too long (управляется black/ruff formatter)
+    "B008",   # do not perform function calls in argument defaults (FastAPI Depends)
+    "UP007",  # Use X | Y for type annotations (можем использовать Optional)
+    "N805",   # first argument should be self (для pydantic validators)
+    "RUF001", # ambiguous cyrillic characters (мы используем русский язык)
+    "RUF002", # ambiguous cyrillic in docstrings (русские комментарии)
+    "RUF003", # ambiguous cyrillic in comments (русские комментарии)
+    "F821",   # undefined name (forward references в моделях)
+]
+
+# Разрешить автофикс для этих правил
+fixable = ["I", "F401", "UP", "C4", "SIM"]
+
+[lint.per-file-ignores]
+# Тесты могут иметь более свободные правила
+"tests/**/*.py" = ["S", "ARG", "FBT"]
+
+[lint.isort]
+# Настройки isort (сортировка импортов)
+known-first-party = ["app"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+
+[format]
+# Форматирование (как black)
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
