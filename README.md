@@ -78,49 +78,35 @@
 
 **ExFlow Wishlist** — это современное, многофункциональное веб-приложение для создания и управления списками желаний (вишлистами). Идеально подходит для дней рождения, праздников, свадеб или любых особых событий.
 
-<div align="center">
+<br>
 
 ### 🌟 Почему ExFlow Wishlist?
-
-</div>
 
 <table>
 <tr>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shopping%20Cart.png" width="60" height="60" alt="Shopping Cart"/>
-<br><br>
+<h3>🛍️</h3>
 <b>Интеграция с маркетплейсами</b>
 <br><br>
 Автоматический парсинг товаров с Wildberries, Ozon и Яндекс.Маркет
-<br><br>
 </td>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="60" height="60" alt="Mobile Phone"/>
-<br><br>
+<h3>📱</h3>
 <b>Telegram-бот</b>
 <br><br>
 Управляйте вишлистами прямо из Telegram с WebApp интеграцией
-<br><br>
 </td>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" width="60" height="60" alt="Link"/>
-<br><br>
+<h3>🔗</h3>
 <b>Умная публикация</b>
 <br><br>
 Несколько уровней доступа: приватный, по ссылке, публичный
-<br><br>
 </td>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" width="60" height="60" alt="Artist Palette"/>
-<br><br>
+<h3>🎨</h3>
 <b>Кастомизация</b>
 <br><br>
 Персонализируйте темами, цветами и обложками
-<br><br>
 </td>
 </tr>
 </table>
@@ -224,89 +210,97 @@
 
 <div align="center">
 
-### Backend
+### Backend Technologies
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,redis&theme=light" alt="Backend Stack" />
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+### Frontend Technologies
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+### DevOps & Tools
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
 </div>
 
-<table>
-<tr>
-<th width="33%">🐍 Backend</th>
-<th width="33%">⚛️ Frontend</th>
-<th width="33%">🐳 Инфраструктура</th>
-</tr>
-<tr>
-<td valign="top">
+<br>
 
-**Язык:**
-- ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)
+<details>
+<summary><b>📋 Подробный список технологий</b></summary>
 
-**Фреймворк:**
-- ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-- ![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=flat)
+<br>
 
-**База данных:**
-- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-316192?style=flat&logo=postgresql&logoColor=white)
-- ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-red?style=flat)
-- ![Alembic](https://img.shields.io/badge/Alembic-migrations-orange?style=flat)
+#### 🐍 Backend
 
-**Кеш:**
-- ![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat&logo=redis&logoColor=white)
+| Компонент | Технология | Версия |
+|-----------|-----------|--------|
+| **Язык** | Python | 3.11+ |
+| **Веб-фреймворк** | FastAPI + Uvicorn | - |
+| **База данных** | PostgreSQL | 15 |
+| **ORM** | SQLAlchemy | 2.0 |
+| **Миграции** | Alembic | - |
+| **Кеш** | Redis | 7 |
+| **Валидация** | Pydantic | 2.5 |
+| **Аутентификация** | JWT (python-jose) | - |
+| **Пароли** | bcrypt + passlib | - |
+| **Telegram** | python-telegram-bot | 20.7 |
+| **Парсинг** | BeautifulSoup4 | - |
 
-**Прочее:**
-- ![Pydantic](https://img.shields.io/badge/Pydantic-2.5-E92063?style=flat)
-- ![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=flat&logo=jsonwebtokens&logoColor=white)
+#### ⚛️ Frontend
 
-</td>
-<td valign="top">
+| Компонент | Технология | Версия |
+|-----------|-----------|--------|
+| **Язык** | TypeScript | 5.0+ |
+| **Фреймворк** | React | 18 |
+| **Роутинг** | React Router | 6 |
+| **Формы** | React Hook Form + Zod | - |
+| **Состояние** | Zustand | - |
+| **Стилизация** | TailwindCSS | 3 |
+| **HTTP-клиент** | Axios | - |
+| **UI** | Headless UI + Heroicons | - |
 
-**Язык:**
-- ![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat&logo=typescript&logoColor=white)
+#### 🐳 Инфраструктура
 
-**Фреймворк:**
-- ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=black)
-- ![React Router](https://img.shields.io/badge/React_Router-6-CA4245?style=flat&logo=reactrouter&logoColor=white)
+| Компонент | Технология |
+|-----------|-----------|
+| **Контейнеризация** | Docker + Docker Compose |
+| **Веб-сервер** | Nginx |
+| **Dev Email** | Mailhog |
 
-**Стилизация:**
-- ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+</details>
 
-**Формы:**
-- ![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat)
-- ![Zod](https://img.shields.io/badge/Zod-3B82F6?style=flat)
+<br>
 
-**Состояние:**
-- ![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat)
+### 🏗️ Архитектура сервисов
 
-**HTTP:**
-- ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)
-
-</td>
-<td valign="top">
-
-**Контейнеризация:**
-- ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-- ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat&logo=docker&logoColor=white)
-
-**Веб-сервер:**
-- ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
-
-**Разработка:**
-- ![Mailhog](https://img.shields.io/badge/Mailhog-dev_email-green?style=flat)
-
-**Сервисы:**
 ```
-🔹 Backend (FastAPI)
-🔹 Frontend (React)
-🔹 Database (PostgreSQL)
-🔹 Cache (Redis)
-🔹 Email (Mailhog)
-🔹 Proxy (Nginx)
+┌─────────────────────────────────────────────────────────┐
+│                    🌐 Nginx (Reverse Proxy)              │
+│                     Port 80 / 443                        │
+└────────────┬────────────────────────┬────────────────────┘
+             │                        │
+             ▼                        ▼
+    ┌────────────────┐      ┌─────────────────┐
+    │  ⚛️ Frontend   │      │  🐍 Backend     │
+    │  React SPA     │      │  FastAPI        │
+    │  Port 3000     │      │  Port 8000      │
+    └────────────────┘      └────────┬────────┘
+                                     │
+                    ┌────────────────┼────────────────┐
+                    ▼                ▼                ▼
+            ┌───────────────┐ ┌──────────┐  ┌──────────────┐
+            │ 🗄️ PostgreSQL │ │ 📦 Redis │  │ 📧 Mailhog   │
+            │   Database    │ │  Cache   │  │  Dev Email   │
+            │   Port 5432   │ │ Port 6379│  │  Port 8025   │
+            └───────────────┘ └──────────┘  └──────────────┘
 ```
-
-</td>
-</tr>
-</table>
 
 <br>
 
@@ -316,10 +310,10 @@
 
 ## 🚀 Быстрый старт
 
-### Вариант 1: Docker Compose (рекомендуется)
+### 📦 Docker Compose (рекомендуется)
 
 <details open>
-<summary><b>📦 Развернуть инструкцию</b></summary>
+<summary><b>Развернуть инструкцию</b></summary>
 
 <br>
 
@@ -354,37 +348,25 @@ docker compose up --build
 
 <table>
 <tr>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="50" height="50" alt="Desktop Computer"/>
-<br><br>
+<td align="center" width="25%">
+<h3>🌐</h3>
 <b>Приложение</b><br>
-<code>http://localhost</code>
-<br><br>
+<a href="http://localhost">localhost</a>
 </td>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="50" height="50" alt="Gear"/>
-<br><br>
+<td align="center" width="25%">
+<h3>🔧</h3>
 <b>API</b><br>
-<code>http://localhost/api/v1</code>
-<br><br>
+<a href="http://localhost/api/v1">localhost/api/v1</a>
 </td>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Open%20Book.png" width="50" height="50" alt="Open Book"/>
-<br><br>
+<td align="center" width="25%">
+<h3>📚</h3>
 <b>Документация</b><br>
-<code>http://localhost/docs</code>
-<br><br>
+<a href="http://localhost/docs">localhost/docs</a>
 </td>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Envelope.png" width="50" height="50" alt="Envelope"/>
-<br><br>
+<td align="center" width="25%">
+<h3>📧</h3>
 <b>Mailhog</b><br>
-<code>http://localhost:8025</code>
-<br><br>
+<a href="http://localhost:8025">localhost:8025</a>
 </td>
 </tr>
 </table>
@@ -552,13 +534,14 @@ REACT_APP_API_URL=http://localhost:8000/api/v1
 ### 📖 API Документация
 
 После запуска backend доступна по адресам:
-- **Swagger UI:** http://localhost:8000/docs
-- **ReDoc:** http://localhost:8000/redoc
+- **Swagger UI:** http://localhost:8000/docs (интерактивная документация)
+- **ReDoc:** http://localhost:8000/redoc (альтернативный формат)
 
 ### 🗄️ Миграции базы данных
 
 ```bash
 # Создать миграцию
+cd backend
 alembic revision --autogenerate -m "Описание"
 
 # Применить
@@ -707,49 +690,35 @@ git push origin feature/АмазингФича
 
 **ExFlow Wishlist** is a modern, feature-rich web application for creating and managing wishlists (gift registries). Perfect for birthdays, holidays, weddings, or any special occasion.
 
-<div align="center">
+<br>
 
 ### 🌟 Why ExFlow Wishlist?
-
-</div>
 
 <table>
 <tr>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shopping%20Cart.png" width="60" height="60" alt="Shopping Cart"/>
-<br><br>
+<h3>🛍️</h3>
 <b>Marketplace Integration</b>
 <br><br>
 Automatic product parsing from Wildberries, Ozon, and Yandex.Market
-<br><br>
 </td>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Mobile%20Phone.png" width="60" height="60" alt="Mobile Phone"/>
-<br><br>
+<h3>📱</h3>
 <b>Telegram Bot</b>
 <br><br>
 Manage wishlists directly from Telegram with WebApp integration
-<br><br>
 </td>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" width="60" height="60" alt="Link"/>
-<br><br>
+<h3>🔗</h3>
 <b>Smart Sharing</b>
 <br><br>
 Multiple access levels: private, by-link, public
-<br><br>
 </td>
 <td align="center" width="25%">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" width="60" height="60" alt="Artist Palette"/>
-<br><br>
+<h3>🎨</h3>
 <b>Customizable</b>
 <br><br>
 Personalize with themes, colors, and cover images
-<br><br>
 </td>
 </tr>
 </table>
@@ -853,89 +822,97 @@ Personalize with themes, colors, and cover images
 
 <div align="center">
 
-### Backend
+### Backend Technologies
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,postgres,redis&theme=light" alt="Backend Stack" />
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+
+### Frontend Technologies
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+### DevOps & Tools
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
 </div>
 
-<table>
-<tr>
-<th width="33%">🐍 Backend</th>
-<th width="33%">⚛️ Frontend</th>
-<th width="33%">🐳 Infrastructure</th>
-</tr>
-<tr>
-<td valign="top">
+<br>
 
-**Language:**
-- ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)
+<details>
+<summary><b>📋 Detailed Technology List</b></summary>
 
-**Framework:**
-- ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-- ![Uvicorn](https://img.shields.io/badge/Uvicorn-499848?style=flat)
+<br>
 
-**Database:**
-- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-316192?style=flat&logo=postgresql&logoColor=white)
-- ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-red?style=flat)
-- ![Alembic](https://img.shields.io/badge/Alembic-migrations-orange?style=flat)
+#### 🐍 Backend
 
-**Cache:**
-- ![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat&logo=redis&logoColor=white)
+| Component | Technology | Version |
+|-----------|-----------|---------|
+| **Language** | Python | 3.11+ |
+| **Web Framework** | FastAPI + Uvicorn | - |
+| **Database** | PostgreSQL | 15 |
+| **ORM** | SQLAlchemy | 2.0 |
+| **Migrations** | Alembic | - |
+| **Cache** | Redis | 7 |
+| **Validation** | Pydantic | 2.5 |
+| **Authentication** | JWT (python-jose) | - |
+| **Passwords** | bcrypt + passlib | - |
+| **Telegram** | python-telegram-bot | 20.7 |
+| **Parsing** | BeautifulSoup4 | - |
 
-**Other:**
-- ![Pydantic](https://img.shields.io/badge/Pydantic-2.5-E92063?style=flat)
-- ![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=flat&logo=jsonwebtokens&logoColor=white)
+#### ⚛️ Frontend
 
-</td>
-<td valign="top">
+| Component | Technology | Version |
+|-----------|-----------|---------|
+| **Language** | TypeScript | 5.0+ |
+| **Framework** | React | 18 |
+| **Routing** | React Router | 6 |
+| **Forms** | React Hook Form + Zod | - |
+| **State** | Zustand | - |
+| **Styling** | TailwindCSS | 3 |
+| **HTTP Client** | Axios | - |
+| **UI** | Headless UI + Heroicons | - |
 
-**Language:**
-- ![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat&logo=typescript&logoColor=white)
+#### 🐳 Infrastructure
 
-**Framework:**
-- ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react&logoColor=black)
-- ![React Router](https://img.shields.io/badge/React_Router-6-CA4245?style=flat&logo=reactrouter&logoColor=white)
+| Component | Technology |
+|-----------|-----------|
+| **Containerization** | Docker + Docker Compose |
+| **Web Server** | Nginx |
+| **Dev Email** | Mailhog |
 
-**Styling:**
-- ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+</details>
 
-**Forms:**
-- ![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat)
-- ![Zod](https://img.shields.io/badge/Zod-3B82F6?style=flat)
+<br>
 
-**State:**
-- ![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat)
+### 🏗️ Service Architecture
 
-**HTTP:**
-- ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white)
-
-</td>
-<td valign="top">
-
-**Containerization:**
-- ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-- ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat&logo=docker&logoColor=white)
-
-**Web Server:**
-- ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white)
-
-**Development:**
-- ![Mailhog](https://img.shields.io/badge/Mailhog-dev_email-green?style=flat)
-
-**Services:**
 ```
-🔹 Backend (FastAPI)
-🔹 Frontend (React)
-🔹 Database (PostgreSQL)
-🔹 Cache (Redis)
-🔹 Email (Mailhog)
-🔹 Proxy (Nginx)
+┌─────────────────────────────────────────────────────────┐
+│                    🌐 Nginx (Reverse Proxy)              │
+│                     Port 80 / 443                        │
+└────────────┬────────────────────────┬────────────────────┘
+             │                        │
+             ▼                        ▼
+    ┌────────────────┐      ┌─────────────────┐
+    │  ⚛️ Frontend   │      │  🐍 Backend     │
+    │  React SPA     │      │  FastAPI        │
+    │  Port 3000     │      │  Port 8000      │
+    └────────────────┘      └────────┬────────┘
+                                     │
+                    ┌────────────────┼────────────────┐
+                    ▼                ▼                ▼
+            ┌───────────────┐ ┌──────────┐  ┌──────────────┐
+            │ 🗄️ PostgreSQL │ │ 📦 Redis │  │ 📧 Mailhog   │
+            │   Database    │ │  Cache   │  │  Dev Email   │
+            │   Port 5432   │ │ Port 6379│  │  Port 8025   │
+            └───────────────┘ └──────────┘  └──────────────┘
 ```
-
-</td>
-</tr>
-</table>
 
 <br>
 
@@ -945,10 +922,10 @@ Personalize with themes, colors, and cover images
 
 ## 🚀 Quick Start
 
-### Option 1: Docker Compose (recommended)
+### 📦 Docker Compose (recommended)
 
 <details open>
-<summary><b>📦 Expand instructions</b></summary>
+<summary><b>Expand instructions</b></summary>
 
 <br>
 
@@ -983,37 +960,25 @@ docker compose up --build
 
 <table>
 <tr>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="50" height="50" alt="Desktop Computer"/>
-<br><br>
+<td align="center" width="25%">
+<h3>🌐</h3>
 <b>Application</b><br>
-<code>http://localhost</code>
-<br><br>
+<a href="http://localhost">localhost</a>
 </td>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="50" height="50" alt="Gear"/>
-<br><br>
+<td align="center" width="25%">
+<h3>🔧</h3>
 <b>API</b><br>
-<code>http://localhost/api/v1</code>
-<br><br>
+<a href="http://localhost/api/v1">localhost/api/v1</a>
 </td>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Open%20Book.png" width="50" height="50" alt="Open Book"/>
-<br><br>
+<td align="center" width="25%">
+<h3>📚</h3>
 <b>Documentation</b><br>
-<code>http://localhost/docs</code>
-<br><br>
+<a href="http://localhost/docs">localhost/docs</a>
 </td>
-<td align="center">
-<br>
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Envelope.png" width="50" height="50" alt="Envelope"/>
-<br><br>
+<td align="center" width="25%">
+<h3>📧</h3>
 <b>Mailhog</b><br>
-<code>http://localhost:8025</code>
-<br><br>
+<a href="http://localhost:8025">localhost:8025</a>
 </td>
 </tr>
 </table>
@@ -1181,13 +1146,14 @@ REACT_APP_API_URL=http://localhost:8000/api/v1
 ### 📖 API Documentation
 
 Once backend is running, available at:
-- **Swagger UI:** http://localhost:8000/docs
-- **ReDoc:** http://localhost:8000/redoc
+- **Swagger UI:** http://localhost:8000/docs (interactive documentation)
+- **ReDoc:** http://localhost:8000/redoc (alternative format)
 
 ### 🗄️ Database Migrations
 
 ```bash
 # Create migration
+cd backend
 alembic revision --autogenerate -m "Description"
 
 # Apply
